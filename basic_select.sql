@@ -1,0 +1,25 @@
+SELECT DISTINCT DEPARTMENT_ID FROM hr_db.employees;
+
+SELECT * FROM hr_db.employees ORDER BY FIRST_NAME DESC;
+
+SELECT SUM(SALARY) FROM hr_db.employees;
+
+SELECT MAX(SALARY),MIN(SALARY) FROM hr_db.employees;
+
+SELECT AVG(SALARY),COUNT(EMPLOYEE_ID) FROM hr_db.employees;
+
+SELECT COUNT(*) FROM hr_db.employees;
+
+SELECT COUNT(DISTINCT JOB_ID) FROM hr_db.employees;
+
+SELECT UPPER(FIRST_NAME) FROM hr_db.employees;
+
+SELECT SUBSTRING(FIRST_NAME,1,3) FROM hr_db.employees;
+
+SELECT CONCAT(FIRST_NAME," ",LAST_NAME) AS "Name" FROM hr_db.employees;
+
+SELECT TRIM(FIRST_NAME) FROM hr_db.employees;
+
+SELECT FIRST_NAME, LENGTH(FIRST_NAME), LAST_NAME, LENGTH(LAST_NAME) FROM hr_db.employees;
+
+SELECT * FROM hr_db.employees LIMIT 10;
